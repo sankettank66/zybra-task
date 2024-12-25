@@ -1,10 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";  // use the new navigation hook from Next.js 13
-import { QueryClient } from "@tanstack/react-query";
+import { useRouter } from "next/navigation"; // use the new navigation hook from Next.js 13
 
 export default function Home() {
-  const queryClient = new QueryClient();
   const router = useRouter();
 
   const handleRedirect = () => {
